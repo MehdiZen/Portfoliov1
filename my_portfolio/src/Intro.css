@@ -1,0 +1,7 @@
+.Introduction {
+  /* Styles par défaut pour la div "Introduction" */
+}
+
+.Introduction.active {
+  /* Styles spécifiques lorsque la div "Introduction" est active */
+}
