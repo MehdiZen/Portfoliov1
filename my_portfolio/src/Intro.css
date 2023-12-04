@@ -5,3 +5,14 @@
 .Introduction.active {
   /* Styles spécifiques lorsque la div "Introduction" est active */
 }
+
+.NavBar {
+  display: flex;
+  min-width: 100%;
+  /* width: 100%; */
+  height: 2em;
+  background-color: rgba(0, 0, 0, 0.527);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

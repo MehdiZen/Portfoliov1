@@ -1,9 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+@font-face {
+  font-family: HACKERZ;
+  src: url("././assets/FiraCode-VariableFont_wght.ttf");
+}
 
 @font-face {
   font-family: Batman;
   src: url("./assets/BatmanForeverAlternate\ 400.ttf");
+}
+
+@font-face {
+  font-family: Superman;
+  src: url("./assets/CCUpUpAndAway.otf");
 }
 
 * {
@@ -13,11 +24,11 @@
 }
 
 .Intro {
-position: aboslute; 
-top: 0;
-left: 0;
- height: 100vh;
-   /* background-image: URL("https://wallpapercave.com/wp/wp6024729.jpg"); */
+  position: aboslute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  /* background-image: URL("https://wallpapercave.com/wp/wp6024729.jpg"); */
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   background-size: cover;
@@ -29,38 +40,179 @@ left: 0;
   position: absolute;
   top: 50%;
   right: 10%;
+  font-size: 20px;
 }
 
+.moi {
+  margin: 3em;
+  color: white;
+  font-weight: bolder;
+  text-shadow: black 1px 1px 2px;
+  width: 100;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.5);
+}
 
-.ecran h2 {
+.moi h3 {
+
+  font: 24px;
+  color: red;
+  font-family: Batman;
+}
+
+.moi p {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+.lie {
+  padding: 0 4px;
+}
+
+.lie.hiddenz {
+  /* visibility: hidden; */
+  /* display: none; */
+  background-color: rgb(31, 30, 30);
+  margin: 2px 1px;
+  color: rgb(31, 30, 30);
+  text-shadow: none;
+}
+
+.boutbout {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.boutbout.hiddenz {
+  display: none;
+}
+.underline{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+}
+.underlineb{
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: blue;
+}
+.quote {
   position: absolute;
   top: 35%;
   left: 4%;
+  color: white;
+  font-size: 30px;
+}
+
+.ecran h2 {
+
   color: red;
   font-family: Batman;
   font-size: 30px;
 }
 
-#beam {
-  /* visibility: hidden;   */
-  position: absolute;
-  bottom: 17em;
-  left: 43em;
-  transform: rotate(70deg);
+#q1 {
   animation-duration: 0.5s;
   animation-name: animate-fade;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
 }
 
-#ogbat {
+#q2 {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 3.5s;
+  animation-fill-mode: backwards;
+}
+
+#q3 {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 5.5s;
+  animation-fill-mode: backwards;
+}
+
+#q4 {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 15.5s;
+  animation-fill-mode: backwards;
+}
+
+#q5 {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 26.5s;
+  animation-fill-mode: backwards;
+}
+
+#q6 {
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 30.5s;
+  animation-fill-mode: backwards;
+}
+
+#beam {
+  /* visibility: hidden;   */
   position: absolute;
-  top: 1em;
-  left: 48em;
-  animation-duration: 0.6s;
+  top: 32%;
+  left: 43%;
+  transform: rotate(70deg);
+  animation-duration: 1.5s;
+  animation-name: animate-fade;
+  animation-delay: 6.0s;
+  animation-fill-mode: backwards;
+  pointer-events: none;
+
+}
+#contactezmoi{
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 1300;
+}
+#batlogo{
+  position: absolute;
+  width: 100vh;
+  height: auto;
+  z-index: 10000000000000;
+  animation-name: rotating;
+  animation-duration: 1.5s;
+  top: 20%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+
+}
+.venjens{
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  font-size: 16px;
+  animation-duration: 1.6s;
+  animation-name: animate-fade;
+  color: red;
+  text-shadow: black 1px 1px;
+  font-family: Batman;
+  /* animation: rotating 40s linear infinite; */
+  animation-delay: 6.2s;
+  animation-fill-mode: backwards;
+}
+#ogbat {
+  pointer-events: none;
+
+  position: absolute;
+  top: 15%;
+  left: 48%;
+  animation-duration: 1.6s;
   animation-name: animate-fade;
   /* animation: rotating 40s linear infinite; */
-  animation-delay: 0.6s;
+  animation-delay: 6.2s;
   animation-fill-mode: backwards;
   opacity: 0.7;
 }
@@ -79,13 +231,76 @@ body {
   background-attachment: fixed;
   background-size: cover;
   min-height: fit-content;
-  min-width:fit-content;
+  min-width: fit-content;
   overflow-y: hidden;
-  
+
+}
+
+.Player {
+  font-size: 20px;
+  text-align: center;
+  width: 15em;
+  background-color: rgba(128, 128, 128, 0.349);
+  border-radius: 15px;
+  position: absolute;
+  color: green;
+  top: -3em;
+  left: 0;
+}
+
+.Player i:hover {
+  text-shadow: black 1px 1px 4px;
+}
+.success{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+font-size: 22px;
+color:yellow;
+font-family: superman;
+}
+
+#money{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+font-size: 22px;
+color:red;
+font-family: Batman;
+}
+.skip-button {
+  position: absolute;
+  bottom: 2vh;
+  right: 1vh;
+  background-color: black;
+  font-size: 22px;
+  /* background-color: #0081b000; */
+  border-radius: 10px;
+  border: none;
+  animation: rainbow 5s infinite;
+  cursor: pointer;
+}
+
+.Player i {
+  margin: 0 0.5em;
+  text-align: center;
+}
+
+.fababy {
+  cursor: pointer;
+
+}
+
+.music-info {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 14px;
 }
 
 .imagecv {
-  margin-top: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -116,7 +331,7 @@ body {
   justify-content: center;
   animation-duration: 0.5s;
   animation-name: animate-fade;
-  animation-delay: 1.5s;
+  animation-delay: 9s;
   animation-fill-mode: backwards;
 }
 
@@ -350,22 +565,22 @@ h1 {
 
 footer {
   position: relative;
-  bottom:0px;
+  bottom: 0px;
   display: flex;
   text-align: center;
   justify-content: center;
   padding: 0.5em;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.527);
+}
+
+footer p {
+  padding-top: 15px;
   text-align: center;
   font-size: larger;
   font-weight: bold;
   font-family: Batman;
   color: rgb(229, 255, 0);
-}
-
-footer p {
-  padding-top: 15px;
 }
 
 /* LAAAAAAAAAA C EST LE CONTACT FOOORM */
@@ -393,34 +608,259 @@ footer p {
 .formularito h2 {
   color: yellow;
   text-shadow: red 3px 3px;
-  font-size: 44px;
+  font-size: 32px;
   font-family: Batman;
   padding-bottom: 2em;
 }
 
+#name {
+  width: 25em;
+  font-size: 16px;
+  background-color: black;
+  color: #2AFEB7;
+  font-family: HACKERZ;
+}
+
 #email {
   width: 25em;
+  font-size: 16px;
+  background-color: black;
+  color: #2AFEB7;
+  font-family: HACKERZ;
+
+
 }
 
 .formularito textarea {
-  font-size: large;
-  width: 50em;
-  height: 12em;
+  width: 25em;
+  height: 7em;
   border: 2px solid rgb(75, 75, 75);
   border-radius: 5px;
   margin-bottom: 15px;
+  font-size: 16px;
+  background-color: black;
+  color: #2AFEB7;
+  font-family: HACKERZ;
+}
+
+.formularito textarea:focus {
+  border-color: black;
 }
 
 #pointclick {
+  background-color: black;
+  color: #2AFEB7;
   cursor: pointer;
 }
 
+.Services {
+  margin-top: 10em;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(255, 251, 0, 0.397);
+  border-radius: 15px;
+  border: solid 2px black;
+  font-size: larger;
+  margin: 1em 15%;
+  margin-top: 4em;
+  padding: 0.5em;
+}
+
+.Services h2 {
+  font-family: Superman;
+  color: black;
+}
+
+.servicesp {
+  text-align: justify;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rainbow-text-loop {
+  font-size: 1.5rem;
+  width: 100%;
+  display: inline-block;
+  text-align: end;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 4px #000000;
+  animation: rainbow 5s infinite;
+}
+
+.downloadex {
+  margin: 1em 1em;
+  font-size: 40px;
+  color: yellow;
+}
+
+.downloadex:hover {
+  margin: 0.5em 0.5em;
+  text-shadow: red 4px 4px;
+  font-size: 60px;
+
+}
+
+.music-info {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.music-info marquee {
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    color: orange;
+  }
+
+  10% {
+    color: purple;
+  }
+
+  20% {
+    color: red;
+  }
+
+  30% {
+    color: CadetBlue;
+  }
+
+  40% {
+    color: yellow;
+  }
+
+  50% {
+    color: coral;
+  }
+
+  60% {
+    color: green;
+  }
+
+  70% {
+    color: cyan;
+  }
+
+  80% {
+    color: DeepPink;
+  }
+
+  90% {
+    color: DodgerBlue;
+  }
+  
+  100% {
+    color: orange;
+  }
+}
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+@media screen and (max-width: 1200px) {
+  footer{
+    display:none
+  }
+  .venjens{
+    display:none;
+  }
+  #beam{
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
+#batlogo{
+  width: 100%;
+  height: auto;
+  top: 30%;
+  left: 5%;
+}
+
+.body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: initial; 
+}
+body{
+  background-image: none;
+}
+  .downloadex{
+    position: relative;
+    right: 2em;
+    top: 2em;
+  }
+
+  .NavBar {
+    height: 8em;
+    width: 10px;
+    
+  }
 
   .NavBar ul {
     display: block;
     padding: 0;
     padding-top: 10px;
+  }
+  
+
+  .imagecv {
+    height: 100%;
+  }
+
+  .imagecv img {
+    margin: 0;
+    padding: 0;
+    margin-top: 10em;
+    height: 60vh;
+    width: auto;
   }
 
   .NavBar ul li {
@@ -432,14 +872,27 @@ footer p {
   }
 
   .app {
-    padding: 4rem 2rem;
+    padding: 4rem 0;
   }
 
   .search {
     padding: 1rem 1.75rem;
-    width: 100%;
+    width: 70%;
   }
-
+  #ogbat{
+    top: 7%;
+    left: 4em;
+    z-index: -10;
+  }
+  .moi{
+    display: none;
+  }
+  .boutbout{
+    display: none;
+  }
+  .skip-button{
+    margin-right: 25px;
+  }
   .search input {
     font-size: 0.9rem;
   }
@@ -447,6 +900,9 @@ footer p {
   .search img {
     width: 20px;
     height: 20px;
+  }
+  footer{
+    display:none;
   }
 }
 
@@ -462,10 +918,27 @@ footer p {
   .container {
     margin-top: 2rem;
   }
-
+  
   .movie {
     width: "100%";
     margin: 1rem;
+  }
+}
+
+@media screen and (min-width: 2031px) {
+  #beam {
+    /* visibility: hidden;   */
+    position: absolute;
+    top: 40%;
+    left: 45%;
+
+  }
+
+  #ogbat {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    animation-duration: 1.6s;
   }
 }
 
@@ -489,13 +962,54 @@ footer p {
   }
 }
 
-@keyframes rotating {
-  from {
-    transform: rotate(0deg)
+@keyframes animate-fade-call {
+  0% {
+    opacity: 0;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
   }
 
-  to {
-    transform: rotate(360deg)
+  100% {
+    opacity: 1;
+
   }
 
 }
+
+
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+@keyframes clignoter {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+  @keyframes rotating {
+    0% {
+      transform: rotate(0deg) scale(0.2);
+    }
+  
+    50% {
+      transform: rotate(720deg) scale(1.5);
+    }
+    100%{
+      transform: rotate(1560deg) scale(0.1);
+  
+    }
+  }
+  
